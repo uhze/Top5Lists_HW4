@@ -7,8 +7,10 @@ import {
     AppBanner,
     HomeWrapper,
     RegisterScreen,
+    LoginScreen,
     Statusbar,
-    WorkspaceScreen
+    WorkspaceScreen,
+    SplashScreen
 } from './components'
 /*
     This is our application's top-level component.
@@ -30,7 +32,9 @@ const App = () => {
                     <Switch>
                         <Route path="/" exact component={HomeWrapper} />
                         <Route path="/register/" exact component={RegisterScreen} />
+                        <Route path="/login/" exact component ={LoginScreen} />
                         <Route path="/top5list/:id" exact component={WorkspaceScreen} />
+                        <Route path="/splash/" exact component={SplashScreen} />
                     </Switch>
                     <Statusbar />
                 </GlobalStoreContextProvider>
