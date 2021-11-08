@@ -78,6 +78,7 @@ function AuthContextProvider(props) {
 
     auth.logoutUser = async function(){
         const response = await api.logoutUser();
+        
         if(response.status === 200){
             authReducer({
                 type: AuthActionType.LOGOUT_USER,
