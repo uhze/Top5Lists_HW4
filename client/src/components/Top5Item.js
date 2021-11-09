@@ -130,7 +130,7 @@ function Top5Item(props) {
                 key = {props.key}
                 onKeyPress={handleKeyPress}
                 onChange={handleKeyPress}
-                defaultValue={itemClass}
+                defaultValue={props.text}
                 inputProps={{style: {fontSize: 48}}}
                 InputLabelProps={{style: {fontSize: 24}}}
                 autoFocus
